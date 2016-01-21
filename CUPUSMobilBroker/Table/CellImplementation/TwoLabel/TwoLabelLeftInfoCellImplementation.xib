@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TwoLabelLeftInfoCellImplementation" selectionStyle="default" indentationWidth="10" reuseIdentifier="TwoLabelLeftInfoCellImplementation" rowHeight="44" id="niJ-yb-ZCg" customClass="TwoLabelLeftInfoCell" customModule="CUPUSMobilBroker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="niJ-yb-ZCg" id="Jla-PS-a8o">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="a7g-8b-1Nu">
+                        <rect key="frame" x="16" y="9" width="131" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="131" id="z8E-ho-3iU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lJg-iu-LAG">
+                        <rect key="frame" x="163" y="0.0" width="141" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" enablesReturnKeyAutomatically="YES"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a7g-8b-1Nu" firstAttribute="centerY" secondItem="Jla-PS-a8o" secondAttribute="centerY" id="5k6-8Z-3md"/>
+                    <constraint firstItem="lJg-iu-LAG" firstAttribute="top" secondItem="Jla-PS-a8o" secondAttribute="top" id="MwD-y2-SwC"/>
+                    <constraint firstItem="lJg-iu-LAG" firstAttribute="leading" secondItem="a7g-8b-1Nu" secondAttribute="trailing" constant="16" id="XPJ-kl-QoK"/>
+                    <constraint firstItem="a7g-8b-1Nu" firstAttribute="leading" secondItem="Jla-PS-a8o" secondAttribute="leading" constant="16" id="Z9k-jx-ug7"/>
+                    <constraint firstAttribute="trailing" secondItem="lJg-iu-LAG" secondAttribute="trailing" constant="16" id="eSj-DG-emx"/>
+                    <constraint firstAttribute="bottom" secondItem="lJg-iu-LAG" secondAttribute="bottom" id="zEo-bL-urW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstField" destination="lJg-iu-LAG" id="0h0-hy-y6c"/>
+                <outlet property="firstLabel" destination="a7g-8b-1Nu" id="lXW-Lf-TUC"/>
+            </connections>
+            <point key="canvasLocation" x="449" y="289"/>
+        </tableViewCell>
+    </objects>
+</document>

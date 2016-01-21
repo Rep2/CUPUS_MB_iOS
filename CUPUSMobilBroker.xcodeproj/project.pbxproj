@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5049E97373F2F230AB0CABA3 /* libPods-CUPUSMobilBroker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25672A28DDAAFC82334E31CE /* libPods-CUPUSMobilBroker.a */; };
+		AD4CB2121C5091CE00F1B9D7 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CB2111C5091CE00F1B9D7 /* Wireframe.swift */; };
+		AD4CB2141C5095F500F1B9D7 /* TabbarControllerCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CB2131C5095F500F1B9D7 /* TabbarControllerCreator.swift */; };
+		AD4CB2171C509E0400F1B9D7 /* AudioLevelRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CB2161C509E0400F1B9D7 /* AudioLevelRecording.swift */; };
+		AD4CB2191C50BE1B00F1B9D7 /* AudioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD4CB2181C50BE1B00F1B9D7 /* AudioCell.xib */; };
+		AD4CB21B1C50BEFF00F1B9D7 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CB21A1C50BEFF00F1B9D7 /* AudioCell.swift */; };
+		AD4CB21D1C50C4FF00F1B9D7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4CB21C1C50C4FF00F1B9D7 /* LocationManager.swift */; };
+		AD4CB21F1C50C55200F1B9D7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4CB21E1C50C55200F1B9D7 /* CoreLocation.framework */; };
+		ADD09B5C1C507A9400109EF3 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD09B5B1C507A9400109EF3 /* BaseNavigationViewController.swift */; };
+		ADF51CE51C50DFE600118CBA /* GenericViewControllerIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF51CE41C50DFE600118CBA /* GenericViewControllerIdentifiers.swift */; };
+		ADF51CE71C50E4B800118CBA /* OneLabelCheckBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADF51CE61C50E4B800118CBA /* OneLabelCheckBox.xib */; };
+		F0A53C601C4FB7090039ED82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C5F1C4FB7090039ED82 /* AppDelegate.swift */; };
+		F0A53C621C4FB7090039ED82 /* PublisheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C611C4FB7090039ED82 /* PublisheViewController.swift */; };
+		F0A53C641C4FB7090039ED82 /* SubscriberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C631C4FB7090039ED82 /* SubscriberViewController.swift */; };
+		F0A53C671C4FB7090039ED82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A53C651C4FB7090039ED82 /* Main.storyboard */; };
+		F0A53C691C4FB7090039ED82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0A53C681C4FB7090039ED82 /* Assets.xcassets */; };
+		F0A53C6C1C4FB7090039ED82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A53C6A1C4FB7090039ED82 /* LaunchScreen.storyboard */; };
+		F0A53C771C4FB7090039ED82 /* CUPUSMobilBrokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C761C4FB7090039ED82 /* CUPUSMobilBrokerTests.swift */; };
+		F0A53C821C4FB7090039ED82 /* CUPUSMobilBrokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C811C4FB7090039ED82 /* CUPUSMobilBrokerUITests.swift */; };
+		F0A53CA31C4FB7F20039ED82 /* GenericCellImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C911C4FB7F20039ED82 /* GenericCellImplementation.swift */; };
+		F0A53CA41C4FB7F20039ED82 /* OneLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C931C4FB7F20039ED82 /* OneLabelTableViewCell.swift */; };
+		F0A53CA51C4FB7F20039ED82 /* OneLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A53C941C4FB7F20039ED82 /* OneLabelTableViewCell.xib */; };
+		F0A53CA61C4FB7F20039ED82 /* SingleLabelWithImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C961C4FB7F20039ED82 /* SingleLabelWithImageCell.swift */; };
+		F0A53CA71C4FB7F20039ED82 /* SingleLabelWithImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A53C971C4FB7F20039ED82 /* SingleLabelWithImageCell.xib */; };
+		F0A53CA81C4FB7F20039ED82 /* TwoLabelLeftInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C991C4FB7F20039ED82 /* TwoLabelLeftInfoCell.swift */; };
+		F0A53CA91C4FB7F20039ED82 /* TwoLabelLeftInfoCellImplementation.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A53C9A1C4FB7F20039ED82 /* TwoLabelLeftInfoCellImplementation.xib */; };
+		F0A53CAA1C4FB7F20039ED82 /* SubtitelWithImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A53C9C1C4FB7F20039ED82 /* SubtitelWithImageCell.xib */; };
+		F0A53CAB1C4FB7F20039ED82 /* TwoLabelOneImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C9D1C4FB7F20039ED82 /* TwoLabelOneImageTableViewCell.swift */; };
+		F0A53CAC1C4FB7F20039ED82 /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53C9F1C4FB7F20039ED82 /* CellModel.swift */; };
+		F0A53CAD1C4FB7F20039ED82 /* BasicTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53CA11C4FB7F20039ED82 /* BasicTable.swift */; };
+		F0A53CAE1C4FB7F20039ED82 /* TableWithRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53CA21C4FB7F20039ED82 /* TableWithRefresh.swift */; };
+		F0A53CB61C4FB81B0039ED82 /* GenericViewControllerDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53CB01C4FB81B0039ED82 /* GenericViewControllerDecorator.swift */; };
+		F0A53CB71C4FB81B0039ED82 /* GenericRefreshTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53CB21C4FB81B0039ED82 /* GenericRefreshTableViewController.swift */; };
+		F0A53CB81C4FB81B0039ED82 /* Generics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0A53CB31C4FB81B0039ED82 /* Generics.storyboard */; };
+		F0A53CB91C4FB81B0039ED82 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53CB41C4FB81B0039ED82 /* GenericTableViewController.swift */; };
+		F0A53CBA1C4FB81B0039ED82 /* ViewControllerWithDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A53CB51C4FB81B0039ED82 /* ViewControllerWithDecorator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0A53C731C4FB7090039ED82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0A53C541C4FB7080039ED82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0A53C5B1C4FB7080039ED82;
+			remoteInfo = CUPUSMobilBroker;
+		};
+		F0A53C7E1C4FB7090039ED82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0A53C541C4FB7080039ED82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0A53C5B1C4FB7080039ED82;
+			remoteInfo = CUPUSMobilBroker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25672A28DDAAFC82334E31CE /* libPods-CUPUSMobilBroker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CUPUSMobilBroker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E057D9631173D9B8129F7CE /* Pods-CUPUSMobilBroker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUPUSMobilBroker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CUPUSMobilBroker/Pods-CUPUSMobilBroker.debug.xcconfig"; sourceTree = "<group>"; };
+		AD4CB2111C5091CE00F1B9D7 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wireframe.swift; path = Wireframe/Wireframe.swift; sourceTree = "<group>"; };
+		AD4CB2131C5095F500F1B9D7 /* TabbarControllerCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabbarControllerCreator.swift; path = Wireframe/TabbarControllerCreator.swift; sourceTree = "<group>"; };
+		AD4CB2161C509E0400F1B9D7 /* AudioLevelRecording.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioLevelRecording.swift; sourceTree = "<group>"; };
+		AD4CB2181C50BE1B00F1B9D7 /* AudioCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioCell.xib; sourceTree = "<group>"; };
+		AD4CB21A1C50BEFF00F1B9D7 /* AudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
+		AD4CB21C1C50C4FF00F1B9D7 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AD4CB21E1C50C55200F1B9D7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ADD09B5B1C507A9400109EF3 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNavigationViewController.swift; path = Wireframe/BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		ADF51CE41C50DFE600118CBA /* GenericViewControllerIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewControllerIdentifiers.swift; sourceTree = "<group>"; };
+		ADF51CE61C50E4B800118CBA /* OneLabelCheckBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneLabelCheckBox.xib; sourceTree = "<group>"; };
+		B310CAC7AA50A773832955EB /* Pods-CUPUSMobilBroker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUPUSMobilBroker.release.xcconfig"; path = "Pods/Target Support Files/Pods-CUPUSMobilBroker/Pods-CUPUSMobilBroker.release.xcconfig"; sourceTree = "<group>"; };
+		F0A53C5C1C4FB7080039ED82 /* CUPUSMobilBroker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CUPUSMobilBroker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A53C5F1C4FB7090039ED82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0A53C611C4FB7090039ED82 /* PublisheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisheViewController.swift; sourceTree = "<group>"; };
+		F0A53C631C4FB7090039ED82 /* SubscriberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberViewController.swift; sourceTree = "<group>"; };
+		F0A53C661C4FB7090039ED82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0A53C681C4FB7090039ED82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0A53C6B1C4FB7090039ED82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0A53C6D1C4FB7090039ED82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A53C721C4FB7090039ED82 /* CUPUSMobilBrokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CUPUSMobilBrokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A53C761C4FB7090039ED82 /* CUPUSMobilBrokerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUPUSMobilBrokerTests.swift; sourceTree = "<group>"; };
+		F0A53C781C4FB7090039ED82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A53C7D1C4FB7090039ED82 /* CUPUSMobilBrokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CUPUSMobilBrokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0A53C811C4FB7090039ED82 /* CUPUSMobilBrokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUPUSMobilBrokerUITests.swift; sourceTree = "<group>"; };
+		F0A53C831C4FB7090039ED82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A53C911C4FB7F20039ED82 /* GenericCellImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCellImplementation.swift; sourceTree = "<group>"; };
+		F0A53C931C4FB7F20039ED82 /* OneLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneLabelTableViewCell.swift; sourceTree = "<group>"; };
+		F0A53C941C4FB7F20039ED82 /* OneLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneLabelTableViewCell.xib; sourceTree = "<group>"; };
+		F0A53C961C4FB7F20039ED82 /* SingleLabelWithImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLabelWithImageCell.swift; sourceTree = "<group>"; };
+		F0A53C971C4FB7F20039ED82 /* SingleLabelWithImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleLabelWithImageCell.xib; sourceTree = "<group>"; };
+		F0A53C991C4FB7F20039ED82 /* TwoLabelLeftInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLabelLeftInfoCell.swift; sourceTree = "<group>"; };
+		F0A53C9A1C4FB7F20039ED82 /* TwoLabelLeftInfoCellImplementation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoLabelLeftInfoCellImplementation.xib; sourceTree = "<group>"; };
+		F0A53C9C1C4FB7F20039ED82 /* SubtitelWithImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubtitelWithImageCell.xib; sourceTree = "<group>"; };
+		F0A53C9D1C4FB7F20039ED82 /* TwoLabelOneImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLabelOneImageTableViewCell.swift; sourceTree = "<group>"; };
+		F0A53C9F1C4FB7F20039ED82 /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		F0A53CA11C4FB7F20039ED82 /* BasicTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicTable.swift; sourceTree = "<group>"; };
+		F0A53CA21C4FB7F20039ED82 /* TableWithRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableWithRefresh.swift; sourceTree = "<group>"; };
+		F0A53CB01C4FB81B0039ED82 /* GenericViewControllerDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewControllerDecorator.swift; sourceTree = "<group>"; };
+		F0A53CB21C4FB81B0039ED82 /* GenericRefreshTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRefreshTableViewController.swift; sourceTree = "<group>"; };
+		F0A53CB31C4FB81B0039ED82 /* Generics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Generics.storyboard; sourceTree = "<group>"; };
+		F0A53CB41C4FB81B0039ED82 /* GenericTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
+		F0A53CB51C4FB81B0039ED82 /* ViewControllerWithDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWithDecorator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0A53C591C4FB7080039ED82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4CB21F1C50C55200F1B9D7 /* CoreLocation.framework in Frameworks */,
+				5049E97373F2F230AB0CABA3 /* libPods-CUPUSMobilBroker.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A53C6F1C4FB7090039ED82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A53C7A1C4FB7090039ED82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F60A8B4D2544717292E3CDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E057D9631173D9B8129F7CE /* Pods-CUPUSMobilBroker.debug.xcconfig */,
+				B310CAC7AA50A773832955EB /* Pods-CUPUSMobilBroker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD4CB2151C509DF200F1B9D7 /* AudioLevelRecording */ = {
+			isa = PBXGroup;
+			children = (
+				AD4CB2161C509E0400F1B9D7 /* AudioLevelRecording.swift */,
+			);
+			name = AudioLevelRecording;
+			sourceTree = "<group>";
+		};
+		ADD09B5A1C507A7300109EF3 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				AD4CB2111C5091CE00F1B9D7 /* Wireframe.swift */,
+				ADD09B5B1C507A9400109EF3 /* BaseNavigationViewController.swift */,
+				AD4CB2131C5095F500F1B9D7 /* TabbarControllerCreator.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		E104E2B193397F9024E95068 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25672A28DDAAFC82334E31CE /* libPods-CUPUSMobilBroker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0A53C531C4FB7080039ED82 = {
+			isa = PBXGroup;
+			children = (
+				AD4CB21E1C50C55200F1B9D7 /* CoreLocation.framework */,
+				F0A53C5E1C4FB7090039ED82 /* CUPUSMobilBroker */,
+				F0A53C751C4FB7090039ED82 /* CUPUSMobilBrokerTests */,
+				F0A53C801C4FB7090039ED82 /* CUPUSMobilBrokerUITests */,
+				F0A53C5D1C4FB7080039ED82 /* Products */,
+				4F60A8B4D2544717292E3CDD /* Pods */,
+				E104E2B193397F9024E95068 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0A53C5D1C4FB7080039ED82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53C5C1C4FB7080039ED82 /* CUPUSMobilBroker.app */,
+				F0A53C721C4FB7090039ED82 /* CUPUSMobilBrokerTests.xctest */,
+				F0A53C7D1C4FB7090039ED82 /* CUPUSMobilBrokerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0A53C5E1C4FB7090039ED82 /* CUPUSMobilBroker */ = {
+			isa = PBXGroup;
+			children = (
+				AD4CB2151C509DF200F1B9D7 /* AudioLevelRecording */,
+				ADD09B5A1C507A7300109EF3 /* Wireframe */,
+				F0A53CAF1C4FB81B0039ED82 /* ViewController */,
+				F0A53C8F1C4FB7F20039ED82 /* Table */,
+				F0A53C5F1C4FB7090039ED82 /* AppDelegate.swift */,
+				F0A53C611C4FB7090039ED82 /* PublisheViewController.swift */,
+				F0A53C631C4FB7090039ED82 /* SubscriberViewController.swift */,
+				F0A53C651C4FB7090039ED82 /* Main.storyboard */,
+				F0A53C681C4FB7090039ED82 /* Assets.xcassets */,
+				F0A53C6A1C4FB7090039ED82 /* LaunchScreen.storyboard */,
+				F0A53C6D1C4FB7090039ED82 /* Info.plist */,
+				AD4CB21C1C50C4FF00F1B9D7 /* LocationManager.swift */,
+			);
+			path = CUPUSMobilBroker;
+			sourceTree = "<group>";
+		};
+		F0A53C751C4FB7090039ED82 /* CUPUSMobilBrokerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53C761C4FB7090039ED82 /* CUPUSMobilBrokerTests.swift */,
+				F0A53C781C4FB7090039ED82 /* Info.plist */,
+			);
+			path = CUPUSMobilBrokerTests;
+			sourceTree = "<group>";
+		};
+		F0A53C801C4FB7090039ED82 /* CUPUSMobilBrokerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53C811C4FB7090039ED82 /* CUPUSMobilBrokerUITests.swift */,
+				F0A53C831C4FB7090039ED82 /* Info.plist */,
+			);
+			path = CUPUSMobilBrokerUITests;
+			sourceTree = "<group>";
+		};
+		F0A53C8F1C4FB7F20039ED82 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53C901C4FB7F20039ED82 /* CellImplementation */,
+				F0A53C9E1C4FB7F20039ED82 /* Cells */,
+				F0A53CA01C4FB7F20039ED82 /* Table */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		F0A53C901C4FB7F20039ED82 /* CellImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53C911C4FB7F20039ED82 /* GenericCellImplementation.swift */,
+				F0A53C921C4FB7F20039ED82 /* OneLabel */,
+				F0A53C951C4FB7F20039ED82 /* OneLabelWithImage */,
+				F0A53C981C4FB7F20039ED82 /* TwoLabel */,
+				F0A53C9B1C4FB7F20039ED82 /* TwoLabelOneImage */,
+				AD4CB2181C50BE1B00F1B9D7 /* AudioCell.xib */,
+				AD4CB21A1C50BEFF00F1B9D7 /* AudioCell.swift */,
+			);
+			path = CellImplementation;
+			sourceTree = "<group>";
+		};
+		F0A53C921C4FB7F20039ED82 /* OneLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53C931C4FB7F20039ED82 /* OneLabelTableViewCell.swift */,
+				F0A53C941C4FB7F20039ED82 /* OneLabelTableViewCell.xib */,
+				ADF51CE61C50E4B800118CBA /* OneLabelCheckBox.xib */,
+			);
+			path = OneLabel;
+			sourceTree = "<group>";
+		};
+		F0A53C951C4FB7F20039ED82 /* OneLabelWithImage */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53C961C4FB7F20039ED82 /* SingleLabelWithImageCell.swift */,
+				F0A53C971C4FB7F20039ED82 /* SingleLabelWithImageCell.xib */,
+			);
+			path = OneLabelWithImage;
+			sourceTree = "<group>";
+		};
+		F0A53C981C4FB7F20039ED82 /* TwoLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53C991C4FB7F20039ED82 /* TwoLabelLeftInfoCell.swift */,
+				F0A53C9A1C4FB7F20039ED82 /* TwoLabelLeftInfoCellImplementation.xib */,
+			);
+			path = TwoLabel;
+			sourceTree = "<group>";
+		};
+		F0A53C9B1C4FB7F20039ED82 /* TwoLabelOneImage */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53C9C1C4FB7F20039ED82 /* SubtitelWithImageCell.xib */,
+				F0A53C9D1C4FB7F20039ED82 /* TwoLabelOneImageTableViewCell.swift */,
+			);
+			path = TwoLabelOneImage;
+			sourceTree = "<group>";
+		};
+		F0A53C9E1C4FB7F20039ED82 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53C9F1C4FB7F20039ED82 /* CellModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F0A53CA01C4FB7F20039ED82 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53CA11C4FB7F20039ED82 /* BasicTable.swift */,
+				F0A53CA21C4FB7F20039ED82 /* TableWithRefresh.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		F0A53CAF1C4FB81B0039ED82 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53CB01C4FB81B0039ED82 /* GenericViewControllerDecorator.swift */,
+				F0A53CB11C4FB81B0039ED82 /* Table */,
+				F0A53CB51C4FB81B0039ED82 /* ViewControllerWithDecorator.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F0A53CB11C4FB81B0039ED82 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				F0A53CB21C4FB81B0039ED82 /* GenericRefreshTableViewController.swift */,
+				F0A53CB41C4FB81B0039ED82 /* GenericTableViewController.swift */,
+				F0A53CB31C4FB81B0039ED82 /* Generics.storyboard */,
+				ADF51CE41C50DFE600118CBA /* GenericViewControllerIdentifiers.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0A53C5B1C4FB7080039ED82 /* CUPUSMobilBroker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A53C861C4FB7090039ED82 /* Build configuration list for PBXNativeTarget "CUPUSMobilBroker" */;
+			buildPhases = (
+				C89849F0091A1AB9FBBA5F91 /* Check Pods Manifest.lock */,
+				F0A53C581C4FB7080039ED82 /* Sources */,
+				F0A53C591C4FB7080039ED82 /* Frameworks */,
+				F0A53C5A1C4FB7080039ED82 /* Resources */,
+				D9C204F2A834F4C67E782FCA /* Embed Pods Frameworks */,
+				B6111AA291D53579C9808764 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CUPUSMobilBroker;
+			productName = CUPUSMobilBroker;
+			productReference = F0A53C5C1C4FB7080039ED82 /* CUPUSMobilBroker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0A53C711C4FB7090039ED82 /* CUPUSMobilBrokerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A53C891C4FB7090039ED82 /* Build configuration list for PBXNativeTarget "CUPUSMobilBrokerTests" */;
+			buildPhases = (
+				F0A53C6E1C4FB7090039ED82 /* Sources */,
+				F0A53C6F1C4FB7090039ED82 /* Frameworks */,
+				F0A53C701C4FB7090039ED82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0A53C741C4FB7090039ED82 /* PBXTargetDependency */,
+			);
+			name = CUPUSMobilBrokerTests;
+			productName = CUPUSMobilBrokerTests;
+			productReference = F0A53C721C4FB7090039ED82 /* CUPUSMobilBrokerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0A53C7C1C4FB7090039ED82 /* CUPUSMobilBrokerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A53C8C1C4FB7090039ED82 /* Build configuration list for PBXNativeTarget "CUPUSMobilBrokerUITests" */;
+			buildPhases = (
+				F0A53C791C4FB7090039ED82 /* Sources */,
+				F0A53C7A1C4FB7090039ED82 /* Frameworks */,
+				F0A53C7B1C4FB7090039ED82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0A53C7F1C4FB7090039ED82 /* PBXTargetDependency */,
+			);
+			name = CUPUSMobilBrokerUITests;
+			productName = CUPUSMobilBrokerUITests;
+			productReference = F0A53C7D1C4FB7090039ED82 /* CUPUSMobilBrokerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0A53C541C4FB7080039ED82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = IN2;
+				TargetAttributes = {
+					F0A53C5B1C4FB7080039ED82 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F0A53C711C4FB7090039ED82 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F0A53C5B1C4FB7080039ED82;
+					};
+					F0A53C7C1C4FB7090039ED82 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F0A53C5B1C4FB7080039ED82;
+					};
+				};
+			};
+			buildConfigurationList = F0A53C571C4FB7080039ED82 /* Build configuration list for PBXProject "CUPUSMobilBroker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0A53C531C4FB7080039ED82;
+			productRefGroup = F0A53C5D1C4FB7080039ED82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0A53C5B1C4FB7080039ED82 /* CUPUSMobilBroker */,
+				F0A53C711C4FB7090039ED82 /* CUPUSMobilBrokerTests */,
+				F0A53C7C1C4FB7090039ED82 /* CUPUSMobilBrokerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0A53C5A1C4FB7080039ED82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF51CE71C50E4B800118CBA /* OneLabelCheckBox.xib in Resources */,
+				F0A53C6C1C4FB7090039ED82 /* LaunchScreen.storyboard in Resources */,
+				F0A53C691C4FB7090039ED82 /* Assets.xcassets in Resources */,
+				F0A53CB81C4FB81B0039ED82 /* Generics.storyboard in Resources */,
+				F0A53C671C4FB7090039ED82 /* Main.storyboard in Resources */,
+				AD4CB2191C50BE1B00F1B9D7 /* AudioCell.xib in Resources */,
+				F0A53CA51C4FB7F20039ED82 /* OneLabelTableViewCell.xib in Resources */,
+				F0A53CAA1C4FB7F20039ED82 /* SubtitelWithImageCell.xib in Resources */,
+				F0A53CA91C4FB7F20039ED82 /* TwoLabelLeftInfoCellImplementation.xib in Resources */,
+				F0A53CA71C4FB7F20039ED82 /* SingleLabelWithImageCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A53C701C4FB7090039ED82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A53C7B1C4FB7090039ED82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6111AA291D53579C9808764 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CUPUSMobilBroker/Pods-CUPUSMobilBroker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C89849F0091A1AB9FBBA5F91 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C204F2A834F4C67E782FCA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CUPUSMobilBroker/Pods-CUPUSMobilBroker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0A53C581C4FB7080039ED82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A53CAB1C4FB7F20039ED82 /* TwoLabelOneImageTableViewCell.swift in Sources */,
+				F0A53CA41C4FB7F20039ED82 /* OneLabelTableViewCell.swift in Sources */,
+				F0A53CB91C4FB81B0039ED82 /* GenericTableViewController.swift in Sources */,
+				ADF51CE51C50DFE600118CBA /* GenericViewControllerIdentifiers.swift in Sources */,
+				F0A53CAE1C4FB7F20039ED82 /* TableWithRefresh.swift in Sources */,
+				AD4CB21B1C50BEFF00F1B9D7 /* AudioCell.swift in Sources */,
+				AD4CB2141C5095F500F1B9D7 /* TabbarControllerCreator.swift in Sources */,
+				F0A53C641C4FB7090039ED82 /* SubscriberViewController.swift in Sources */,
+				F0A53CA61C4FB7F20039ED82 /* SingleLabelWithImageCell.swift in Sources */,
+				F0A53CA31C4FB7F20039ED82 /* GenericCellImplementation.swift in Sources */,
+				AD4CB2171C509E0400F1B9D7 /* AudioLevelRecording.swift in Sources */,
+				F0A53CB61C4FB81B0039ED82 /* GenericViewControllerDecorator.swift in Sources */,
+				F0A53CAD1C4FB7F20039ED82 /* BasicTable.swift in Sources */,
+				F0A53CAC1C4FB7F20039ED82 /* CellModel.swift in Sources */,
+				F0A53C601C4FB7090039ED82 /* AppDelegate.swift in Sources */,
+				F0A53C621C4FB7090039ED82 /* PublisheViewController.swift in Sources */,
+				F0A53CBA1C4FB81B0039ED82 /* ViewControllerWithDecorator.swift in Sources */,
+				AD4CB2121C5091CE00F1B9D7 /* Wireframe.swift in Sources */,
+				AD4CB21D1C50C4FF00F1B9D7 /* LocationManager.swift in Sources */,
+				ADD09B5C1C507A9400109EF3 /* BaseNavigationViewController.swift in Sources */,
+				F0A53CA81C4FB7F20039ED82 /* TwoLabelLeftInfoCell.swift in Sources */,
+				F0A53CB71C4FB81B0039ED82 /* GenericRefreshTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A53C6E1C4FB7090039ED82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A53C771C4FB7090039ED82 /* CUPUSMobilBrokerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0A53C791C4FB7090039ED82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A53C821C4FB7090039ED82 /* CUPUSMobilBrokerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0A53C741C4FB7090039ED82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0A53C5B1C4FB7080039ED82 /* CUPUSMobilBroker */;
+			targetProxy = F0A53C731C4FB7090039ED82 /* PBXContainerItemProxy */;
+		};
+		F0A53C7F1C4FB7090039ED82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0A53C5B1C4FB7080039ED82 /* CUPUSMobilBroker */;
+			targetProxy = F0A53C7E1C4FB7090039ED82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0A53C651C4FB7090039ED82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A53C661C4FB7090039ED82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0A53C6A1C4FB7090039ED82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0A53C6B1C4FB7090039ED82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0A53C841C4FB7090039ED82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0A53C851C4FB7090039ED82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0A53C871C4FB7090039ED82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E057D9631173D9B8129F7CE /* Pods-CUPUSMobilBroker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CUPUSMobilBroker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IN2.interneaplikacije.CUPUSMobilBroker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F0A53C881C4FB7090039ED82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B310CAC7AA50A773832955EB /* Pods-CUPUSMobilBroker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CUPUSMobilBroker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IN2.interneaplikacije.CUPUSMobilBroker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F0A53C8A1C4FB7090039ED82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CUPUSMobilBrokerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IN2.interneaplikacije.CUPUSMobilBrokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CUPUSMobilBroker.app/CUPUSMobilBroker";
+			};
+			name = Debug;
+		};
+		F0A53C8B1C4FB7090039ED82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CUPUSMobilBrokerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IN2.interneaplikacije.CUPUSMobilBrokerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CUPUSMobilBroker.app/CUPUSMobilBroker";
+			};
+			name = Release;
+		};
+		F0A53C8D1C4FB7090039ED82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CUPUSMobilBrokerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IN2.interneaplikacije.CUPUSMobilBrokerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CUPUSMobilBroker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F0A53C8E1C4FB7090039ED82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CUPUSMobilBrokerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = IN2.interneaplikacije.CUPUSMobilBrokerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CUPUSMobilBroker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0A53C571C4FB7080039ED82 /* Build configuration list for PBXProject "CUPUSMobilBroker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A53C841C4FB7090039ED82 /* Debug */,
+				F0A53C851C4FB7090039ED82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A53C861C4FB7090039ED82 /* Build configuration list for PBXNativeTarget "CUPUSMobilBroker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A53C871C4FB7090039ED82 /* Debug */,
+				F0A53C881C4FB7090039ED82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A53C891C4FB7090039ED82 /* Build configuration list for PBXNativeTarget "CUPUSMobilBrokerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A53C8A1C4FB7090039ED82 /* Debug */,
+				F0A53C8B1C4FB7090039ED82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A53C8C1C4FB7090039ED82 /* Build configuration list for PBXNativeTarget "CUPUSMobilBrokerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0A53C8D1C4FB7090039ED82 /* Debug */,
+				F0A53C8E1C4FB7090039ED82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0A53C541C4FB7080039ED82 /* Project object */;
+}
